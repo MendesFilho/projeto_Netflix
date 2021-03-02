@@ -1,0 +1,76 @@
+/* Podemos usar varIáveis em nosso CSS           */
+:root{              
+    --vermelho:#e50914;
+    --preta:#141414;
+}
+
+/* Definindo margem, espaçamento e o limete da nossa página com o border-box.  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Elementos base    */
+/* Definindo uma cor preta para fundo da página e uma fontes padrão     */
+body{    
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+}
+
+/* Na nossa header container "menu de navegação" queremos que fique alinhado em fileira
+, centralizado e com espaçamento entre os textos                 */
+header.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Nosso texto principal, pedimos que alinhe a esquerda com espaçamento
+de 5 pixels, cor vermelha, fonte arial black e tamanho da fonte 40 pixels  */
+header h2.logo{               
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: Arial black;
+    font-size: 40px;
+
+}
+
+/* Aqui fazemos um efeito no menu de navegação, um branco mais 
+claro alinhado a direita 10 pixels         */
+header nav a{
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+}
+
+/* Efeito no menu com o hover ao passar o mouse por cima das letras   */
+header nav a:hover{
+    color: #fff;
+}
+
+/* filme principal */
+
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('../img/houseofcards.jpg');
+
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 60px;
+}
+
+.titulo{
+    font-size: 40px;
+}
