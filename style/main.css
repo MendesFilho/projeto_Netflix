@@ -68,9 +68,40 @@ header nav a:hover{
 }
 
 .filme-principal .descricao{
-    margin-bottom: 60px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+
 }
 
-.titulo{
+.filme-principal .titulo{
+    margin-top: 15%;
     font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+
+
+}
+/* Ajuste no botão, padding top 15px e right 30px, espaço entre elementos margin-right 15px   */
+/* Usamos cursor:pointer para alteração do ponteiro do mouse, ao passar em cima do botão ele muda */
+/* Transition usamos para dar um efeito de transação, dando uma suavidade na mudança de cor */
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+/* Cores do botão, ao passar o mouse muda para branco, saindo volta para preto  */
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+/*  Espaçamento entre texto botão e ícone  */
+.botao i{
+    margin-right: 8px;
 }
