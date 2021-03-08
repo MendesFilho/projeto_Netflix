@@ -105,16 +105,23 @@ header nav a:hover{
 .botao i{
     margin-right: 8px;
 }
+
 /* Aqui mostramos como é bom trabalharmos com containers e 
 wrappers "fazem as mesma coisa, envelopar ou embrulhar" queremos dar um espaçamento nos textos principal 
 e da descrição do filme, como usamos container na logo e no filme principal, os dois elementos serão
 alterados    */
-
 .container{
     margin-left: 20px;
 }
-/* Aqui definimos uma limitação de largura para nosso container do filme principal  */
+
+/* Aqui definimos uma limitação de largura para nosso container do filme principal */
 .filme-principal .container{
     width: 70%;
 }
 
+/* Ajustar altura e largura para as imagens */
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
