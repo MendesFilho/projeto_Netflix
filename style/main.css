@@ -15,7 +15,7 @@
 /* Definindo uma cor preta para fundo da página e uma fontes padrão     */
 body{    
     background: var(--preta);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Arial', Times, serif;
     color: white;
 
 }
@@ -124,4 +124,9 @@ alterados    */
     height: 100%;
     width: 100%;
     display: block;
+}
+
+/* Espaçamento aplicado entre carrossel e imagem filme principal   */
+.carrossel-filmes{
+    margin-top:5px;
 }
