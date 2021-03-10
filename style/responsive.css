@@ -1,0 +1,21 @@
+/* Aplicaremos essa regra de media na tela, até no máximo 700px, ou seja até 700px será
+aplicado essa formatação no menu de navegação  */
+@media screen and (max-width:700px){
+    header.container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.botao{
+    margin-top: 5px;
+    width: 190px;
+}
+
+/* Quando minha largura for menor que 1000px quero que minha classe descrição tenha 50% de largura */
+@media screen and (min-width:1000px){
+    .descricao {
+        width: 50%;
+    }
+
+}
